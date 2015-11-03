@@ -1,23 +1,23 @@
 <html>
 <header></header>
 <body>
-<b>Welcome to my webpage. This page will feature my experiences during the pre fab academy workshop.</b>
+<b>Welcome to my webpage. This page features my experiences during the pre fab academy workshop. </b>
 <h1>Day 1: The Pre Fab Academy- Learn Make Share</h1>
 
 <p><b>Date: 19th October 2015</b></p>
 
-<p>Everyone seemed really excited when Mr Francisco , our trainer for the Pre Fab Academy started the class by giving the classical examples of What Digital Fabrication is all about. Important refernces were made to The Mathematical Theory of Communication and The Third Industrial Revolution, an article published in The Economist. 
+<p>Everyone seemed really excited when Mr Francisco Sanchez, our trainer for the Pre Fab Academy started the class by giving the classical examples of What Digital Fabrication is all about. Important refernces were made to The Mathematical Theory of Communication and The Third Industrial Revolution, an article published in The Economist. 
 
-Francisco then introduced himselves, and told his journey from being a Civil Engineering and how he got interest in Fab Academy. He then explained the projects that he did in his fab lab, The Beach Lab and the 9 principles of MIT Media Labs.
+Francisco then introduced himselves, and told his journey from being a Civil Engineering and how he got interest in Fab Academy. He then explained the projects that he did in his fab lab, <a href ="http://www.beachlab.org">The Beach Lab</a> and <a href=""> the 9 principles of MIT Media Labs</a>.
 
-Pre fab academy is the stepping stone towards the Fab Academy course and wherein all the topics are covered from its basics. The method of evaluation of performance in the pre fab academy is based on the overall performance in the course and on the way you document. 
+Pre fab academy is the stepping stone towards the Fab Academy course and wherein all the topics are covered from its basics. The method of evaluation of performance in the pre fab academy is based on the overall performance in the course and on the way you document which is the same as fab academy. 
 
-Francisco highlighted the importance of Learn Make Share, and  </p>
+Francisco highlighted the importance of Learn Make Share, and the necessity of documenting the same </p>
 
 
-Day 2: From Windows to Ubuntu (the unexpected plunge)
+<h2>Day 2: From Windows to Ubuntu (the unexpected plunge)</h2>
 
-Date : 20th October 2015
+<b><l>Date : 20th October 2015</l></b>
 
 For the Pre Fab Academy it is essential to keep a seperate note book for writing down all the points during the course of the workshop. It is insisted to use the same notebook if you are attending the fab academy. The documentation shall be done in such a way that in case of doing a machine operation
 Name of the work
@@ -27,11 +27,11 @@ Settings
 Measurements (if any)
 
 Having never used ubuntu before, when Fracisco asked to install Ubuntu, it was like What should i do with it. 
-My Laptop Specs:
+The  Laptop's am using has the following Specs:
 Model: Dell Inspiron 
-Processor: Intel® Core™ i5-3210M CPU @ 2.50GHz × 4 with 4 GB RAM
+Processor: Intel® Core™ i5-3210M CPU @ 2.50GHz × 4 with 4 GB RAM, 64 bit 
 
-Installing Ubuntu 14.04
+<b>Step 1 Installing Ubuntu 14.04</b>
 The important thing before installation of Ubuntu is to create partitions in the available harddisk space by opening Manange -> Computer Management-> Storage and you can see the way how your hardisk is divided into various partitions. My hardisk had 6 partitions and i merged 2 drives which had free space resulting in a new space with 160GB. 
 After plugging in the pendrive with Ubuntu 14.04 restart the computer. Press F12 and get into Boot Settings. 
 Navigate through the top menu bar and you can find 
@@ -47,7 +47,7 @@ Memory : Primary
 Ext 24
 Allocate space as per your choice (50 GB)
 
-For /homee
+For /home
 Memory: logical
 Ext 24
 Space allocated: 100 GB
@@ -59,13 +59,13 @@ Install Ubuntu
 
 Once you have completed installing ubuntu, update the OS by opening the Terminal (Ctrl+alt+t). 
 
-apt-get update 
+<b>apt-get update</b> 
 
 If this shows permission denied use the below command
 
-sudo apt-get update (sudo means super user do)
+<b>sudo apt-get update</b> (sudo means super user do => gives admin rights)
 
-Once you have successfully updated Ubuntu, the next step is to download the dependencies and for which log on to kokompe.cba.mit.edu
+Once you have successfully updated Ubuntu, the next step is to download the dependencies and for which log on to < a href="https://www.kokompe.cba.mit.edu">www.kokompe.cba.mit.edu</a>
 
 Once that is done next step is to download the fab modules
 
@@ -73,9 +73,59 @@ Once that is done next step is to download the fab modules
 Unzip the fab module,open the folder, right click select open terminal here.
 If you couldnt find it you need to install nautilus (file manager)
 
-sudo apt-get install nautilus
+<b>sudo apt-get install nautilus</b>
+This enables you to open terminal directly with in the folder by staying inside the directory itselfs
 
-Install fab modules
+<b> Step 2: Install fab modules by downloading the fab_src.zip</b>
+
+After downloading is unzip and install. Upon completion of installation open the file directory and enter
+
+<b><p>make fab</p> 
+<p>sudo make install</p> </b>
+
+More details can be found in <a href="http://kokompe.cba.mit.edu/downloads">http://kokompe.cba.mit.edu/downloads</a>
+
+Now you have the fab modules ready. The fab modules enable your laptop to communicaate with all the machines in fablab.
+Once you are done with fab modules you need to install some essential softwares which are listed below:
+<ol>
+<li>Cura
+<li>GIMP
+<li>Inkscape
+<li>Openscad
+<li>Arduino IDE
+<li>Attiny addon for arduino IDE (Download this from the website of highlow tech. Here is the link)
+<li>qcad
+<li>git (Git is a widely used version control system for software development.It is a distributed revision control system with an emphasis on speed,data integrity,and support for distributed, non-linear workflows.Git was initially designed and developed by Linus Torvalds for Linux kernel development in 2005.Source:https://en.wikipedia.org/wiki/Git_%28software%29)
+<li>eagle
+<li>kicad
+<li>wine
+<li>Partworks in wine
+</ol>
+
+Step 3: Installing Antimony : The super cool designing software
+Fab Academy highly recommends using Antimony for designing in fablabs. Antimony is a software created by Mkeeter 
+
+How to Install  
+
+Intall Qt5 (an application, where in you can design software by placing buttons and corresponding codes are generated simultaneously which supports Antimony )
+
+Install the following
+
+Clone antimony (for getting the antimony updated automatically from the github repository)
+
+~/Qt5.4.0/5.4/gcc_64/bin/qmake ../sb.pro
+sudo make install
+
+make -j8
+
+./app/antimony
+
+
+Antimony is not getting installed in my computer and  i am finding errors for the same today. Hope i can install soon.
+
+***Screen shots of the error to come here***
+
+But after trying three times finally got it installed. Well that was really a relief !!!!
 
 Then downlaod kokopelli.retro.zip (shared by francisco)
 extract
@@ -83,34 +133,32 @@ make fab
 cd bin
 ./kokopelli
 
-Download antimony
+Download antimony and installation of Antimony
 
-Search github antimony
+So what is Antimony then? Antimony is a software that is used for 
+Search github antimony on google 
 Open
 
-Intall Qt5 (an application, where in you can design software by placing buttons and corresponding codes are generated simultaneously)
-
-Install the following
-
-Clone antimony (for getting the antimony updated automatically)
-
-~/Qt5.4.0/5.4/gcc_64/bin/qmake ../sb.pro
-sudo make -j8
-./app/antimony
 
 
-Antimony is not getting installed in my computer and  i am finding errors for the same
-
-***Screen shots of the error to come here***
-
-Day 3: 
+<h3>Day 3:Setting up the Tone</h3>  
 Date: October 21, 2015
 
 So by Day 2 the laptop was ready with all the softwares and dependencies and its all set for the pre fab.
+Social Networking was never a serious concern for me and i was only used to facebook and twitter. Apart from this today, I came to realise the importance of websites like github. Then I created accounts in the below listed websites as directed by our Guru:
+<ol>
+<li>Fablabs.io (Global network of fablabs )
+<li>git.fabcloud.io
+<li>Google
+<li>Youtube/Vimeo
+<li>Github
+<li>Dropbox
+<li>Sketchfab
+</ol>
 
-Day 3 : The Social Network Connection
+Creating Repository
 
-Social Networking was never a serious concern for me and i was only used to facebook and twitter. Apart from this 
+
 
 
 Day 4: Its my fablab, Keep it clean
@@ -145,9 +193,8 @@ google easy resize pictures ubuntu
 index
 folders for files and images
 
-
-
-
-
-</body>
+        </body>
 </html>
+
+
+ANtimony is parametric 
